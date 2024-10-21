@@ -2,7 +2,7 @@ import random
 import os
 from openai import OpenAI
 
-client = OpenAI(api_key="sk-ki6NrKzRHuHjRULAA7SG7YGg3jHE885dz7ovVXOYdlDW2XgV", base_url="https://api2.aigcbest.top/v1")
+client = OpenAI(api_key="", base_url="")
 
 def generate_agent_info(existing_agents):
     previous_agents = "\n".join([f"Name: {info['name']}, Family Info: {info['family_info']}, Friend Info: {info['friend_info']}, Colleague Info: {info['colleague_info']}, Stranger Info: {info['stranger_info']}" for info in existing_agents])
