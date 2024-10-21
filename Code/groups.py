@@ -1,6 +1,6 @@
 
 import random
-from agents_gpt import *
+from agents import *
 import json
 
 class Group:
