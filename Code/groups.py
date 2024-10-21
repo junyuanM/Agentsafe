@@ -63,11 +63,11 @@ class Group:
             print("No agents available.")
         else:
             for agent_name, agent in self.agents.items():
-                print(f"代理姓名: {agent_name}")
-                print("  陌生人信息 (Security Level 1):", agent.memory.get("1", "无信息"))
-                print("  同事信息 (Security Level 2):", agent.memory.get("2", "无信息"))
-                print("  朋友信息 (Security Level 3):", agent.memory.get("3", "无信息"))
-                print("  家人信息 (Security Level 4):", agent.memory.get("4", "无信息"))
+                print(f"name: {agent_name}")
+                print("(Security Level 1):", agent.memory.get("1", "no information"))
+                print("(Security Level 2):", agent.memory.get("2", "no information"))
+                print("(Security Level 3):", agent.memory.get("3", "no information"))
+                print("(Security Level 4):", agent.memory.get("4", "no information"))
                 print("-" * 40)
 
     def remove_agent(self, agent_name):
