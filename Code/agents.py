@@ -6,8 +6,8 @@ name = "agent"
 
 class Agent:
     def __init__(self, name):
-        self.api_key = "sk-i1P9usgmpsucBPHDv8bQ0EgcuunfpCQE7tulNgKSserzezPN"
-        self.client = OpenAI(api_key="sk-i1P9usgmpsucBPHDv8bQ0EgcuunfpCQE7tulNgKSserzezPN", base_url="https://api2.aigcbest.top/v1")
+        self.api_key = ""
+        self.client = OpenAI(api_key="", base_url="")
         self.name = name
         self.levels = ["1", "2", "3", "4"]
         self.memory = {level: None for level in self.levels}
